@@ -6,7 +6,7 @@ using UnityEngine.AI;
 using Random = UnityEngine.Random;
 
 public class EnemyGuard : MonoBehaviour {
-    private enum Status { Shooting, Idle, Waiting, Running }
+    private enum Status { Shooting, Idle, Waiting, Running, Damaged }
     Status status = Status.Idle;
 
     private NavMeshAgent agent;
@@ -20,8 +20,9 @@ public class EnemyGuard : MonoBehaviour {
     [SerializeField] GameObject shootPoint;
     [SerializeField] GameObject player;
     private bool damaged = false;
+    [SerializeField] bool followPlayer;
     [SerializeField] float health = 20;
-    [SerializeField] float distanceValue = 20.0f;
+    [SerializeField] float distanceValue = 25.0f;
     [SerializeField] float angleValue = 62f;
     [SerializeField] int damage = 1;
     [SerializeField] float cadence;
@@ -42,11 +43,11 @@ public class EnemyGuard : MonoBehaviour {
             Vector3 playerPosition = new Vector3(player.transform.position.x,
                                             this.transform.position.y,
                                             player.transform.position.z);
-            // if(damaged == true && status == Status.Idle) {
-            //     status = Status.Running;
-            // }else if(damaged == true && status == Status.Waiting){
-            //     status = Status.Shooting;
-            // }
+            if(damaged == true && status == Status.Idle) {
+                
+            }else if(damaged == true && status == Status.Waiting){
+                status = Status.Shooting;
+            }
             switch (status) {
                 case Status.Idle: //When he doesn't see the PLAYER
                     Ray ray = CreateRayCast(eyesWatcher.transform.position, eyesWatcher.transform.forward); ;
@@ -55,10 +56,13 @@ public class EnemyGuard : MonoBehaviour {
                             print("Identificado: " + rch.collider.gameObject.name);
                             status = Status.Running; //When the PLAYER has been detected, he pass to running status
                         }
+                    }else if(damaged == true && status == Status.Idle) { 
+                        status = Status.Running;
                     }
                     break;
                 case Status.Shooting: //When he has seen the PLAYER and has visual contact with him
                     print("EMPEZANDO A DISPARAR");
+                    agent.isStopped = true;
                     this.transform.LookAt(playerPosition);
                     Ray rayShoot = CreateRayCast(shootPoint.transform.position, shootPoint.transform.forward);
                     eyesWatcher.transform.LookAt(player.transform.position);
@@ -74,6 +78,9 @@ public class EnemyGuard : MonoBehaviour {
                     }
                     break;
                 case Status.Waiting: //When he has seen the PLAYER but hasn't visual contact
+                if(followPlayer){
+                    status = Status.Running;
+                }else{
                     shootPoint.transform.rotation = new Quaternion(0f, 0f, 0f, 0f); //Default rotation of the generator bullet
                     animatorEnemyGuard.SetBool("EnemyFounded", true);
                     animatorEnemyGuard.SetBool("Shooting", false);
@@ -83,15 +90,30 @@ public class EnemyGuard : MonoBehaviour {
                         this.transform.LookAt(playerPosition);
                         status = Status.Shooting; //When he arrived to his position, he pass to waiting status
                     }
+                }
+                    
                     break;
                 case Status.Running: //When he isn't in his position and is moving to there
-                    if(positionCombat != null) {
+                    if(followPlayer){
+                        agent.isStopped = false;
+                        agent.destination = player.transform.position;
+                        ray = CreateRayCast(eyesWatcher.transform.position, eyesWatcher.transform.forward);
+                        if (Physics.Raycast(ray, out rch, Mathf.Infinity) && rch.transform.gameObject.name == "HeroController") {
+                            print("Identificado: " + rch.collider.gameObject.name);
+                            status = Status.Shooting; //When he arrived to his position, he pass to waiting status
+                        }
+                    }else if(positionCombat != null) {
                         animatorEnemyGuard.SetBool("Running", true);
                         agent.destination = positionCombat.position;
                     }else{
+                    
                         status = Status.Waiting; //When he arrived to his position, he pass to waiting status
                     }
                     break;
+                case Status.Damaged: //When he isn't in his position and is moving to there
+                    // Animation
+
+                break;
             }
         }else{
             DestroyImmediate(this.gameObject);
