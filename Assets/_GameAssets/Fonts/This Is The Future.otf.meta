@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 3e5c8030874e899489686d4b7f4cfaec
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: This Is The Future
+  fontNames:
+  - This Is The Future
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0e72a6d8c52c8c248a76466c6bc38be2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

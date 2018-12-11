@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: b12429b5fb2093941b6347c778f217fc
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Barrel
+    100002: Barrel Action
+    100004: Bolt End
+    100006: Bolt Shroud
+    100008: Bolt Stop
+    100010: Bolt Stop Release
+    100012: Bolt Stop Spring
+    100014: Brass Shillings
+    100016: Cocking Piece
+    100018: Dont even know what this is
+    100020: Ebony Foretip
+    100022: Ebony Plugs
+    100024: Ejector
+    100026: Ejector Spring
+    100028: End Cap
+    100030: Firing Pin
+    100032: Follower Cap
+    100034: Housing Screws
+    100036: Leupold Dovetail Scope Base
+    100038: Mag Release Pivot
+    100040: Magazine
+    100042: Magazine Cap End
+    100044: Magazine Follower
+    100046: Magazine Release
+    100048: Magazine Spring
+    100050: Magnum Crossbolts
+    100052: Recoil Pad
+    100054: Recoil Pad Screws
+    100056: //RootNode
+    100058: Retaining Pin
+    100060: Ring
+    100062: Safety Assembly
+    100064: Safety Pin
+    100066: Safety Spring?
+    100068: Sear Safety Cam
+    100070: Sear Spring
+    100072: Spring
+    100074: Stock
+    100076: Straps Rings
+    100078: Trigger
+    100080: Trigger Guard
+    100082: Trigger Guard Screws
+    100084: Trigger Housing Assembly
+    100086: Trigger Housing Pins
+    100088: Trigger Pull Screw
+    400000: Barrel
+    400002: Barrel Action
+    400004: Bolt End
+    400006: Bolt Shroud
+    400008: Bolt Stop
+    400010: Bolt Stop Release
+    400012: Bolt Stop Spring
+    400014: Brass Shillings
+    400016: Cocking Piece
+    400018: Dont even know what this is
+    400020: Ebony Foretip
+    400022: Ebony Plugs
+    400024: Ejector
+    400026: Ejector Spring
+    400028: End Cap
+    400030: Firing Pin
+    400032: Follower Cap
+    400034: Housing Screws
+    400036: Leupold Dovetail Scope Base
+    400038: Mag Release Pivot
+    400040: Magazine
+    400042: Magazine Cap End
+    400044: Magazine Follower
+    400046: Magazine Release
+    400048: Magazine Spring
+    400050: Magnum Crossbolts
+    400052: Recoil Pad
+    400054: Recoil Pad Screws
+    400056: //RootNode
+    400058: Retaining Pin
+    400060: Ring
+    400062: Safety Assembly
+    400064: Safety Pin
+    400066: Safety Spring?
+    400068: Sear Safety Cam
+    400070: Sear Spring
+    400072: Spring
+    400074: Stock
+    400076: Straps Rings
+    400078: Trigger
+    400080: Trigger Guard
+    400082: Trigger Guard Screws
+    400084: Trigger Housing Assembly
+    400086: Trigger Housing Pins
+    400088: Trigger Pull Screw
+    2100000: Wood
+    2100002: Metal
+    2100004: Synthetic
+    2100006: Light Steel
+    2100008: Metal Engraved
+    2100010: Light Steel Radial
+    2100012: Brass
+    2100014: African Ebony Wood
+    2100016: plastic
+    2300000: Barrel
+    2300002: Barrel Action
+    2300004: Bolt End
+    2300006: Bolt Shroud
+    2300008: Bolt Stop
+    2300010: Bolt Stop Release
+    2300012: Bolt Stop Spring
+    2300014: Brass Shillings
+    2300016: Cocking Piece
+    2300018: Dont even know what this is
+    2300020: Ebony Foretip
+    2300022: Ebony Plugs
+    2300024: Ejector
+    2300026: Ejector Spring
+    2300028: End Cap
+    2300030: Firing Pin
+    2300032: Follower Cap
+    2300034: Housing Screws
+    2300036: Leupold Dovetail Scope Base
+    2300038: Mag Release Pivot
+    2300040: Magazine
+    2300042: Magazine Cap End
+    2300044: Magazine Follower
+    2300046: Magazine Release
+    2300048: Magazine Spring
+    2300050: Magnum Crossbolts
+    2300052: Recoil Pad
+    2300054: Recoil Pad Screws
+    2300056: Retaining Pin
+    2300058: Ring
+    2300060: Safety Assembly
+    2300062: Safety Pin
+    2300064: Safety Spring?
+    2300066: Sear Safety Cam
+    2300068: Sear Spring
+    2300070: Spring
+    2300072: Stock
+    2300074: Straps Rings
+    2300076: Trigger
+    2300078: Trigger Guard
+    2300080: Trigger Guard Screws
+    2300082: Trigger Housing Assembly
+    2300084: Trigger Housing Pins
+    2300086: Trigger Pull Screw
+    3300000: Barrel
+    3300002: Barrel Action
+    3300004: Bolt End
+    3300006: Bolt Shroud
+    3300008: Bolt Stop
+    3300010: Bolt Stop Release
+    3300012: Bolt Stop Spring
+    3300014: Brass Shillings
+    3300016: Cocking Piece
+    3300018: Dont even know what this is
+    3300020: Ebony Foretip
+    3300022: Ebony Plugs
+    3300024: Ejector
+    3300026: Ejector Spring
+    3300028: End Cap
+    3300030: Firing Pin
+    3300032: Follower Cap
+    3300034: Housing Screws
+    3300036: Leupold Dovetail Scope Base
+    3300038: Mag Release Pivot
+    3300040: Magazine
+    3300042: Magazine Cap End
+    3300044: Magazine Follower
+    3300046: Magazine Release
+    3300048: Magazine Spring
+    3300050: Magnum Crossbolts
+    3300052: Recoil Pad
+    3300054: Recoil Pad Screws
+    3300056: Retaining Pin
+    3300058: Ring
+    3300060: Safety Assembly
+    3300062: Safety Pin
+    3300064: Safety Spring?
+    3300066: Sear Safety Cam
+    3300068: Sear Spring
+    3300070: Spring
+    3300072: Stock
+    3300074: Straps Rings
+    3300076: Trigger
+    3300078: Trigger Guard
+    3300080: Trigger Guard Screws
+    3300082: Trigger Housing Assembly
+    3300084: Trigger Housing Pins
+    3300086: Trigger Pull Screw
+    4300000: Stock
+    4300002: Trigger Guard
+    4300004: Magazine Cap End
+    4300006: Follower Cap
+    4300008: Recoil Pad
+    4300010: Straps Rings
+    4300012: Leupold Dovetail Scope Base
+    4300014: Barrel Action
+    4300016: Bolt End
+    4300018: Cocking Piece
+    4300020: Bolt Shroud
+    4300022: Firing Pin
+    4300024: Spring
+    4300026: Barrel
+    4300028: Ring
+    4300030: Trigger Guard Screws
+    4300032: Ejector
+    4300034: Ejector Spring
+    4300036: Magazine Spring
+    4300038: Magazine Follower
+    4300040: Magazine
+    4300042: Trigger Housing Assembly
+    4300044: Dont even know what this is
+    4300046: Sear Safety Cam
+    4300048: Trigger
+    4300050: Safety Assembly
+    4300052: Housing Screws
+    4300054: Bolt Stop
+    4300056: Trigger Housing Pins
+    4300058: Safety Pin
+    4300060: Sear Spring
+    4300062: Trigger Pull Screw
+    4300064: Bolt Stop Release
+    4300066: Bolt Stop Spring
+    4300068: Recoil Pad Screws
+    4300070: Magnum Crossbolts
+    4300072: Brass Shillings
+    4300074: Ebony Plugs
+    4300076: Magazine Release
+    4300078: Mag Release Pivot
+    4300080: End Cap
+    4300082: Ebony Foretip
+    4300084: Retaining Pin
+    4300086: Safety Spring?
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
