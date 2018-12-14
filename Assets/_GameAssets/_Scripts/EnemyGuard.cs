@@ -26,6 +26,8 @@ public class EnemyGuard : MonoBehaviour {
     [SerializeField] float angleValue = 62f;
     [SerializeField] int damage = 1;
     [SerializeField] float cadence;
+    [SerializeField] int killPoints;
+    [SerializeField] int healthPoints;
     private float otherShoot = 0;
 
 
@@ -33,6 +35,8 @@ public class EnemyGuard : MonoBehaviour {
         otherShoot = cadence;
         agent = GetComponent<NavMeshAgent>();
         animatorEnemyGuard = GetComponent<Animator>();
+        killPoints = 100;
+        healthPoints = 10;
     }
     void Update() {
         if (IsAlive()) {
@@ -62,7 +66,7 @@ public class EnemyGuard : MonoBehaviour {
                     break;
                 case Status.Shooting: //When he has seen the PLAYER and has visual contact with him
                     print("EMPEZANDO A DISPARAR");
-                    agent.isStopped = true;
+                    //agent.isStopped = true;
                     this.transform.LookAt(playerPosition);
                     Ray rayShoot = CreateRayCast(shootPoint.transform.position, shootPoint.transform.forward);
                     eyesWatcher.transform.LookAt(player.transform.position);
@@ -115,8 +119,6 @@ public class EnemyGuard : MonoBehaviour {
 
                 break;
             }
-        }else{
-            DestroyImmediate(this.gameObject);
         }
 
     }
@@ -153,8 +155,12 @@ public class EnemyGuard : MonoBehaviour {
         }
     }
     private bool IsAlive() {
-        if(health <= 0){
+        if(this.health <= 0){
             state = false;
+            animatorEnemyGuard.SetBool("Death", true);
+            player.GetComponent<HeroPlayer>().EnemyKilled(killPoints, healthPoints);
+            Destroy(this);
+            //animatorEnemyGuard.SetBool("Death", false);
         }
         return state;
     }

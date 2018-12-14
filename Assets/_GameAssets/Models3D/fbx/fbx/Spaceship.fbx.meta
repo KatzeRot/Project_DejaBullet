@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 3c4f0731404049246a60556a45400148
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Area
+    100002: Area.001
+    100004: Area.002
+    100006: Area.003
+    100008: Area.004
+    100010: Area.005
+    100012: Area.006
+    100014: Area.007
+    100016: Area.008
+    100018: Area.009
+    100020: Area.010
+    100022: Area.011
+    100024: Camera
+    100026: Captivating_Cannon
+    100028: Floor
+    100030: Front_Window
+    100032: Landing Gear
+    100034: Missile Launcher
+    100036: Sensor Suite
+    100038: Ship
+    100040: Ship.000
+    100042: //RootNode
+    400000: Area
+    400002: Area.001
+    400004: Area.002
+    400006: Area.003
+    400008: Area.004
+    400010: Area.005
+    400012: Area.006
+    400014: Area.007
+    400016: Area.008
+    400018: Area.009
+    400020: Area.010
+    400022: Area.011
+    400024: Camera
+    400026: Captivating_Cannon
+    400028: Floor
+    400030: Front_Window
+    400032: Landing Gear
+    400034: Missile Launcher
+    400036: Sensor Suite
+    400038: Ship
+    400040: Ship.000
+    400042: //RootNode
+    2000000: Camera
+    2100000: fLOOR
+    2100002: Dark Blue
+    2100004: Lighter_Hull_Trim
+    2100006: Main_Hull_Material
+    2100008: Darker_Hull_Trim
+    2100010: Window_Glass
+    2100012: RMS
+    2100014: Lamp_Orange
+    2100016: Material
+    2100018: Black
+    2100020: Cooper
+    2300000: Captivating_Cannon
+    2300002: Floor
+    2300004: Front_Window
+    2300006: Landing Gear
+    2300008: Missile Launcher
+    2300010: Sensor Suite
+    2300012: Ship
+    2300014: Ship.000
+    3300000: Captivating_Cannon
+    3300002: Floor
+    3300004: Front_Window
+    3300006: Landing Gear
+    3300008: Missile Launcher
+    3300010: Sensor Suite
+    3300012: Ship
+    3300014: Ship.000
+    4300000: Floor
+    4300002: Ship.000
+    4300004: Ship
+    4300006: Front_Window
+    4300008: Landing Gear
+    4300010: Sensor Suite
+    4300012: Missile Launcher
+    4300014: Captivating_Cannon
+    10800000: Area
+    10800002: Area.001
+    10800004: Area.002
+    10800006: Area.003
+    10800008: Area.004
+    10800010: Area.005
+    10800012: Area.006
+    10800014: Area.007
+    10800016: Area.008
+    10800018: Area.009
+    10800020: Area.010
+    10800022: Area.011
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

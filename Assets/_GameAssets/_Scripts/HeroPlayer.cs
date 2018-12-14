@@ -13,11 +13,13 @@ public class HeroPlayer : MonoBehaviour {
     [SerializeField] GameObject interactuable;
     [SerializeField] GameObject panelMissions;
     [SerializeField] Text interactuableText;
+    [SerializeField] Text puntuationValueText;
 
     [Header("Atributtes")]
     [SerializeField] const int TOTAL_HEALTH = 100;
     [SerializeField] int health = TOTAL_HEALTH;
     [SerializeField] Text healthText;
+    [SerializeField] int puntuation = 0;
 
     [Header("Weapons")]
     private const int TOTAL_WEAPONS = 2;
@@ -40,6 +42,7 @@ public class HeroPlayer : MonoBehaviour {
     }
     void Update() {
         healthText.text = health + " / " + TOTAL_HEALTH;
+        puntuationValueText.text = puntuation + "";
         ShootAction();
         CrouchAction();
 
@@ -74,7 +77,6 @@ public class HeroPlayer : MonoBehaviour {
             SceneManager.LoadScene("Level_" + indexCurrentLevel);
         }
     }
-
     private void MoveInMenuMissions() {
         if (Input.GetKeyUp(KeyCode.Tab) && menuMissionsAvailable) {
             if (indexCurrentLevel == missions.Length) {
@@ -88,7 +90,6 @@ public class HeroPlayer : MonoBehaviour {
             }
         }
     }
-
     // We check when the Missions Menu is open or not
     private void DoAvailable_MenuMissions() {
         if (menuMissionsAvailable) {
@@ -98,7 +99,6 @@ public class HeroPlayer : MonoBehaviour {
             indexCurrentLevel = 1;
         }
     }
-
     public void ShootAction() {
         if (Input.GetMouseButton(0)) {
             //weapons[equipedWeapon].GetComponent<Animator>().SetBool("Shooting", true);
@@ -127,5 +127,20 @@ public class HeroPlayer : MonoBehaviour {
     public void TakeDamage(int damage) {
         print("PLAYER recibe DAMAGES");
         health -= damage;
+    }
+    public void EnemyKilled(int killPoints, int healthPoints) {
+        puntuation += killPoints;
+        RecuperateHealth(healthPoints);
+
+    }
+    private void RecuperateHealth(int healthPoints) {
+        for (int i = health; i < TOTAL_HEALTH; i++) {
+            health++;
+            healthPoints--;
+            if (healthPoints <= 0) {
+                i = TOTAL_HEALTH;
+            }
+        }
+        
     }
 }
